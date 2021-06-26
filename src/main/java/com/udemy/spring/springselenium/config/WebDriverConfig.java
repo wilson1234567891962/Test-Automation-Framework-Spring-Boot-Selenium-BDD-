@@ -9,8 +9,10 @@ import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.context.annotation.Primary;
 
+@Lazy
 @Configuration
 public class WebDriverConfig {
 
@@ -18,17 +20,17 @@ public class WebDriverConfig {
 	private int timeout;
 
     @Bean
-    @ConditionalOnMissingBean
-    public WebDriver chromeDriver() {
-        WebDriverManager.chromedriver().version("91.0.4472.101").setup();
-        return new ChromeDriver();
-    }
-    
-    @Bean
     @ConditionalOnProperty(name="browser", havingValue="firefox")
     public WebDriver firefoxDriver() {
         WebDriverManager.firefoxdriver().setup();
         return new FirefoxDriver();
+    }
+    
+    @Bean
+    @ConditionalOnMissingBean
+    public WebDriver chromeDriver() {
+        WebDriverManager.chromedriver().version("91.0.4472.101").setup();
+        return new ChromeDriver();
     }
     
     @Bean
