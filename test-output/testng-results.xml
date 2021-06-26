@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-06-26T13:40:47 COT" name="Default suite" finished-at="2021-06-26T13:41:55 COT" duration-ms="67557">
+  <suite started-at="2021-06-26T13:54:33 COT" name="Default suite" finished-at="2021-06-26T13:55:22 COT" duration-ms="48751">
     <groups>
     </groups>
-    <test started-at="2021-06-26T13:40:47 COT" name="Default test" finished-at="2021-06-26T13:41:55 COT" duration-ms="67557">
+    <test started-at="2021-06-26T13:54:33 COT" name="Default test" finished-at="2021-06-26T13:55:22 COT" duration-ms="48751">
       <class name="com.udemy.spring.springselenium.test.googletest.GoogleTest">
-        <test-method is-config="true" signature="springTestContextBeforeTestClass()[pri:0, instance:com.udemy.spring.springselenium.test.googletest.GoogleTest@3b2c0e88]" started-at="2021-06-26T13:40:47 COT" name="springTestContextBeforeTestClass" finished-at="2021-06-26T13:40:47 COT" duration-ms="15" status="PASS">
+        <test-method is-config="true" signature="springTestContextBeforeTestClass()[pri:0, instance:com.udemy.spring.springselenium.test.googletest.GoogleTest@3b2c0e88]" started-at="2021-06-26T13:54:33 COT" name="springTestContextBeforeTestClass" finished-at="2021-06-26T13:54:33 COT" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextBeforeTestClass -->
-        <test-method is-config="true" signature="springTestContextPrepareTestInstance()[pri:0, instance:com.udemy.spring.springselenium.test.googletest.GoogleTest@3b2c0e88]" started-at="2021-06-26T13:40:47 COT" name="springTestContextPrepareTestInstance" finished-at="2021-06-26T13:41:16 COT" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" duration-ms="28868" status="PASS">
+        <test-method is-config="true" signature="springTestContextPrepareTestInstance()[pri:0, instance:com.udemy.spring.springselenium.test.googletest.GoogleTest@3b2c0e88]" started-at="2021-06-26T13:54:33 COT" name="springTestContextPrepareTestInstance" finished-at="2021-06-26T13:54:38 COT" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" duration-ms="5209" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextPrepareTestInstance -->
-        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.udemy.spring.springselenium.test.googletest.GoogleTest@3b2c0e88]" started-at="2021-06-26T13:41:16 COT" name="springTestContextBeforeTestMethod" finished-at="2021-06-26T13:41:16 COT" duration-ms="6" status="PASS">
+        <test-method is-config="true" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.udemy.spring.springselenium.test.googletest.GoogleTest@3b2c0e88]" started-at="2021-06-26T13:54:38 COT" name="springTestContextBeforeTestMethod" finished-at="2021-06-26T13:54:38 COT" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -26,45 +26,25 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextBeforeTestMethod -->
-        <test-method signature="googleTest()[pri:0, instance:com.udemy.spring.springselenium.test.googletest.GoogleTest@3b2c0e88]" started-at="2021-06-26T13:41:16 COT" name="googleTest" finished-at="2021-06-26T13:41:55 COT" duration-ms="38608" status="FAIL">
-          <exception class="org.openqa.selenium.WebDriverException">
+        <test-method signature="googleTest()[pri:0, instance:com.udemy.spring.springselenium.test.googletest.GoogleTest@3b2c0e88]" started-at="2021-06-26T13:54:38 COT" name="googleTest" finished-at="2021-06-26T13:55:22 COT" duration-ms="43470" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Failed to decode response from marionette
+              <![CDATA[Expected condition failed: waiting for com.udemy.spring.springselenium.page.google.SearchResult$$Lambda$862/0x00000008005537b0@1124910c (tried for 30 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-3EOJTAA', ip: '192.168.0.22', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 89.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210622155641, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 27704, moz:profile: C:\Users\wilso\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 7286438f-c9bb-49e7-870e-35184511c80c
-*** Element info: {Using=name, value=div.rc}]]>
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\wilso\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:20284}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b65c1169ad231c52369b7aec6ddcceef]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Failed to decode response from marionette
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.udemy.spring.springselenium.page.google.SearchResult$$Lambda$862/0x00000008005537b0@1124910c (tried for 30 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-3EOJTAA', ip: '192.168.0.22', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 89.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210622155641, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 27704, moz:profile: C:\Users\wilso\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 7286438f-c9bb-49e7-870e-35184511c80c
-*** Element info: {Using=name, value=div.rc}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementsByName(RemoteWebDriver.java:408)
-at org.openqa.selenium.By$ByName.findElements(By.java:276)
-at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:311)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElements(DefaultElementLocator.java:85)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:36)
-at com.sun.proxy.$Proxy72.isEmpty(Unknown Source)
-at com.udemy.spring.springselenium.page.google.SearchResult.lambda$0(SearchResult.java:23)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\wilso\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:20284}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b65c1169ad231c52369b7aec6ddcceef
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 at com.udemy.spring.springselenium.page.google.SearchResult.isAt(SearchResult.java:23)
 at com.udemy.spring.springselenium.test.googletest.GoogleTest.googleTest(GoogleTest.java:28)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -100,11 +80,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- googleTest -->
-        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.udemy.spring.springselenium.test.googletest.GoogleTest@3b2c0e88]" started-at="2021-06-26T13:41:55 COT" name="springTestContextAfterTestMethod" finished-at="2021-06-26T13:41:55 COT" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.udemy.spring.springselenium.test.googletest.GoogleTest@3b2c0e88]" started-at="2021-06-26T13:55:22 COT" name="springTestContextAfterTestMethod" finished-at="2021-06-26T13:55:22 COT" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -115,7 +95,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextAfterTestMethod -->
-        <test-method is-config="true" signature="springTestContextAfterTestClass()[pri:0, instance:com.udemy.spring.springselenium.test.googletest.GoogleTest@3b2c0e88]" started-at="2021-06-26T13:41:55 COT" name="springTestContextAfterTestClass" finished-at="2021-06-26T13:41:55 COT" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="springTestContextAfterTestClass()[pri:0, instance:com.udemy.spring.springselenium.test.googletest.GoogleTest@3b2c0e88]" started-at="2021-06-26T13:55:22 COT" name="springTestContextAfterTestClass" finished-at="2021-06-26T13:55:22 COT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- springTestContextAfterTestClass -->
